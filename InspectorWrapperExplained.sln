@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomIT", "InspectorWrapperExplained\ZoomIT.csproj", "{BB3AFBD3-D4FA-4C6C-80F4-0A87120B8ED8}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ZoomIT Setup", "ZoomIT Setup\ZoomIT Setup.vdproj", "{3B599076-8C15-4B7B-A109-AC07661E82AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB3AFBD3-D4FA-4C6C-80F4-0A87120B8ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3AFBD3-D4FA-4C6C-80F4-0A87120B8ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3AFBD3-D4FA-4C6C-80F4-0A87120B8ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3AFBD3-D4FA-4C6C-80F4-0A87120B8ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B599076-8C15-4B7B-A109-AC07661E82AC}.Debug|Any CPU.ActiveCfg = Debug
+		{3B599076-8C15-4B7B-A109-AC07661E82AC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

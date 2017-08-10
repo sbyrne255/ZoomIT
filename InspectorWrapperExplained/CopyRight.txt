@@ -1,0 +1,5 @@
+﻿Base code has been taken from Code.MSDN.Microsoft.com (https://code.msdn.microsoft.com/outlook-2010-developing-an-c4470591)
+Originally under the Apache License, Version 2.0
+Dated 8/2/2011
+Original Base code written by: Helmut Obertanner
+Modifed to add a GUI, Zoom options to message panes, installers, updated code, and protypes for future advancements. Ribbons have been added to aid in the UI.

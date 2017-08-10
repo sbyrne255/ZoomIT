@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns" label="Zoom It Settings">
+        <group id="MyGroup">
+          <button id="btnLogo" getImage="imageSuper_GetImage" size="large" onAction="Button_Click" label="Save Zoom" />
+          <editBox id="EditBox" label="Zoom %" onChange="RecupDonnee" maxLength="4"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

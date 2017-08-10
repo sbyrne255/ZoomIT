@@ -1,0 +1,2 @@
+﻿FUTURE PLANS INCLUDE:
+2) Optionally add a multipane viewer (preview panes to also be zoomed in on).
