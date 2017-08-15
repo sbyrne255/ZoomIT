@@ -214,6 +214,7 @@
     <Compile Include="JournalItemWrapper.cs" />
     <Compile Include="MailItemWrapper.cs" />
     <Compile Include="InspectorWrapper.cs" />
+    <Compile Include="MouseInput.cs" />
     <Compile Include="PostItemWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

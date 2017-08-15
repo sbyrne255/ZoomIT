@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.dll" size="15208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.dll" size="15976">
       <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>H6ZxIy88EuGxgI0YvJ1Z76hlRBo=</dsig:DigestValue>
+        <dsig:DigestValue>Xuws7QYZsFCmq9pVZrU0Eo3Wed4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.dll" size="91512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.dll" size="92272">
       <assemblyIdentity name="Microsoft.Office.Tools.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>uK40j6nnJUERRTbzK6rrt/veYjM=</dsig:DigestValue>
+        <dsig:DigestValue>OSfRMe8LyFWHGTtmCcBgvyPTp5M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Outlook.dll" size="56184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Outlook.dll" size="56952">
       <assemblyIdentity name="Microsoft.Office.Tools.Outlook" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Z45NrGFI+5l0X3HhkgJINXF0PAI=</dsig:DigestValue>
+        <dsig:DigestValue>UiajSXwVxIo898ghRvQ09FEFzI4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,50 +102,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.v4.0.Framework.dll" size="27528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.v4.0.Framework.dll" size="28288">
       <assemblyIdentity name="Microsoft.Office.Tools.v4.0.Framework" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LJJE9mZjMKMX6lAh5r09+BrqWmo=</dsig:DigestValue>
+        <dsig:DigestValue>DFQGFKyyTHKTllZ0LZXmpN1+Gpc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Tools.Applications.Runtime.dll" size="79776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Tools.Applications.Runtime.dll" size="80544">
       <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QSZp8PHssiLfeKPnOrj5meA8PnI=</dsig:DigestValue>
+        <dsig:DigestValue>s5+DF8w1SxF4Dq0x/8OQl6WjAQI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="22344">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="16384">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>KNXqPPQvMFDHoHscdyVWZZypGYA=</dsig:DigestValue>
+        <dsig:DigestValue>DEMNeVVaj0AXJ5RbDj3Dzpuhu+o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZoomITOutLook.dll" size="71680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZoomITOutLook.dll" size="77312">
       <assemblyIdentity name="ZoomITOutLook" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6BAh0yP5STsyMZLPEZ7fVLnbtDc=</dsig:DigestValue>
+        <dsig:DigestValue>KNZvVtkH1RbyxJKhFGEjxdSHLdM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -173,7 +173,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>h45IOQwjILy6b9Bsyjn234LWQS4=</dsig:DigestValue>
+      <dsig:DigestValue>kKbfgdRhGdoKcPRb1yvo7AZu8Cs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="todo.txt" size="105">
@@ -211,9 +211,10 @@
           <vstov4:appAddIn application="Outlook" loadBehavior="3" keyName="ZoomITOutLook">
             <vstov4:friendlyName>ZoomITOutLook</vstov4:friendlyName>
             <vstov4:description>ZoomITOutLook</vstov4:description>
+            <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1" />
           </vstov4:appAddIn>
         </vstov4:customization>
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=FlashPC\Helmut Obertanner" issuerKeyHash="5e8393f8a0b2900772d42ef65bb741a8f0ae8a5a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WgGYrnByJPV5WNCkKlcJshpiA8o=</DigestValue></Reference></SignedInfo><SignatureValue>EDfUJwGSLee7KrqByC+dpIELOhJCKZ/rTG4EvwGDphWpH1YEMM3WD6j7rIqUm1NLttKfJ9YB0i0MZH6ZqOgyieqJOsm+dy/Kd2kyVZevf7Sn7yjhnEiV/DjtjZUKJYWv0obK26/OG+RPfAN9ITWfmkMNvTSaLD/Lp3VIniymays=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uwbrV2LIdE3ayxNLDcTxph5y7tPwi+bU1nBxXqNDHaAH0uOswaVYuPyanYRb9t4w2xYJ6+K2PD0nkloM6o5dkyy8O5GfZagV1wydHQVNY4MPm3s6Gkt+Oeci5eS8Wv9d5U/T10Q1vA5M/+AtJlHwfFSxmj0bv2C8yNmkb7l8N/k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ca03621ab209572aa4d05879f5247270ae98015a" Description="" Url=""><as:assemblyIdentity name="ZoomITOutLook.dll" version="1.0.0.0" publicKeyToken="d03b54088998d3a8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FlashPC\Helmut Obertanner</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>5xhu3Thlg5qhuhMCdnXJdBEp2DI=</DigestValue></Reference></SignedInfo><SignatureValue>YB+340c0X0pfPg8m6qKkTZfKRXy+M0KoByYiBAscpUR7rdziuv3vQwglGxCRmIvJ/xxahbxrTTNNKfM5+ggKFAIOFpP70mHY7TM1SIbpYS7gnpgsiJA89KNQ0l9DDhTJ7vGQAzgOoG2xLzzrb1SHRmOgFrJ2G2F0LAAWLCBUFgM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uwbrV2LIdE3ayxNLDcTxph5y7tPwi+bU1nBxXqNDHaAH0uOswaVYuPyanYRb9t4w2xYJ6+K2PD0nkloM6o5dkyy8O5GfZagV1wydHQVNY4MPm3s6Gkt+Oeci5eS8Wv9d5U/T10Q1vA5M/+AtJlHwfFSxmj0bv2C8yNmkb7l8N/k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQFkwP/gPa/79KvfyTHKHeYTANBgkqhkiG9w0BAQUFADA9MTswOQYDVQQDHjIARgBsAGEAcwBoAFAAQwBcAEgAZQBsAG0AdQB0ACAATwBiAGUAcgB0AGEAbgBuAGUAcjAeFw0wOTEyMTIxNjM1MjRaFw0xMDEyMTIyMjM1MjRaMD0xOzA5BgNVBAMeMgBGAGwAYQBzAGgAUABDAFwASABlAGwAbQB1AHQAIABPAGIAZQByAHQAYQBuAG4AZQByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7ButXYsh0TdrLE0sNxPGmHnLu0/CL5tTWcHFeo0MdoAfS46zBpVi4/JqdhFv23jDbFgnr4rY8PSeSWgzqjl2TLLw7kZ9lqBXXDJ0dBU1jgw+bezoaS3455yLl5Lxa/13lT9PXRDW8Dkz/4C0mUfB8VLGaPRu/YLzI2aRvuXw3+QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAGa2K5Lf6JM4yl0SXlsfOUJkaVUz8sOKNH8niNYM0y1P1kgJohBaZXCp7nqDRWGEwRMyscjJALLNYfGwsdMhkn3xUTu6iqAI8R+T9+U6xcX/JzTHvNiUibHHKp9ZxlErHYJxexMS8hgjuHNYj3C9dUDweDCZmXEUiNG0E5CRrBzt</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=FlashPC\Helmut Obertanner" issuerKeyHash="5e8393f8a0b2900772d42ef65bb741a8f0ae8a5a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>EEIzlYejxSRYDQnSBkt+DZMa7vY=</DigestValue></Reference></SignedInfo><SignatureValue>mldKvmhEcOYh0fiD5Bd3lwnMeYday39xGaZJCiobznp8gVqPTQNFQDxpFI0u8fcXlc29pfypN3IrKmLBQMzJpa2c+lnpDDc2lSK2+xEeIZhmB5IQAdnbvWCyXSYMiCKEL+LuTncnp0SAH2K7/WOvF7aRmhdTbaFj3Cex50Om4vg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uwbrV2LIdE3ayxNLDcTxph5y7tPwi+bU1nBxXqNDHaAH0uOswaVYuPyanYRb9t4w2xYJ6+K2PD0nkloM6o5dkyy8O5GfZagV1wydHQVNY4MPm3s6Gkt+Oeci5eS8Wv9d5U/T10Q1vA5M/+AtJlHwfFSxmj0bv2C8yNmkb7l8N/k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f6ee1a930d7e4b06d2090d5824c5a38795334210" Description="" Url=""><as:assemblyIdentity name="ZoomITOutLook.dll" version="1.0.0.0" publicKeyToken="d03b54088998d3a8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FlashPC\Helmut Obertanner</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>n5Sd2fmKq5j45AowvxhXze01j0o=</DigestValue></Reference></SignedInfo><SignatureValue>SMeJE7yzfXoEZu+9MJk/MWnXZ/yVqQyUXiuO67+G9Ph68QYUZj1kFyQB+LcmKb8qnu6wUxF4IxIeCJs9dQ9K2axOrfa+YNpE2h9nelvlsifU0mwesjBYjtTkmnLYVksZIHGQi9HV0jwiUXYwxUMQPGrcbEMMmxjSmKeevjI9Cic=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uwbrV2LIdE3ayxNLDcTxph5y7tPwi+bU1nBxXqNDHaAH0uOswaVYuPyanYRb9t4w2xYJ6+K2PD0nkloM6o5dkyy8O5GfZagV1wydHQVNY4MPm3s6Gkt+Oeci5eS8Wv9d5U/T10Q1vA5M/+AtJlHwfFSxmj0bv2C8yNmkb7l8N/k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQFkwP/gPa/79KvfyTHKHeYTANBgkqhkiG9w0BAQUFADA9MTswOQYDVQQDHjIARgBsAGEAcwBoAFAAQwBcAEgAZQBsAG0AdQB0ACAATwBiAGUAcgB0AGEAbgBuAGUAcjAeFw0wOTEyMTIxNjM1MjRaFw0xMDEyMTIyMjM1MjRaMD0xOzA5BgNVBAMeMgBGAGwAYQBzAGgAUABDAFwASABlAGwAbQB1AHQAIABPAGIAZQByAHQAYQBuAG4AZQByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7ButXYsh0TdrLE0sNxPGmHnLu0/CL5tTWcHFeo0MdoAfS46zBpVi4/JqdhFv23jDbFgnr4rY8PSeSWgzqjl2TLLw7kZ9lqBXXDJ0dBU1jgw+bezoaS3455yLl5Lxa/13lT9PXRDW8Dkz/4C0mUfB8VLGaPRu/YLzI2aRvuXw3+QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAGa2K5Lf6JM4yl0SXlsfOUJkaVUz8sOKNH8niNYM0y1P1kgJohBaZXCp7nqDRWGEwRMyscjJALLNYfGwsdMhkn3xUTu6iqAI8R+T9+U6xcX/JzTHvNiUibHHKp9ZxlErHYJxexMS8hgjuHNYj3C9dUDweDCZmXEUiNG0E5CRrBzt</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

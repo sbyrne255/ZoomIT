@@ -6,6 +6,10 @@ using System.Windows.Forms;
 
 namespace InspectorWrapperExplained {
 
+
+
+
+
     /// <summary>
     /// Eventhandler used to correctly clean up resources
     /// </summary>
@@ -50,7 +54,6 @@ namespace InspectorWrapperExplained {
             ((Outlook.InspectorEvents_10_Event)Inspector).BeforeSize += new Outlook.InspectorEvents_10_BeforeSizeEventHandler(BeforeSize);
             ((Outlook.InspectorEvents_10_Event)Inspector).PageChange += new Outlook.InspectorEvents_10_PageChangeEventHandler(PageChange);
 
-            // Initialize is called to give the derived Wrappers a chance to do initialization
             Initialize();
         }
 
@@ -70,12 +73,19 @@ namespace InspectorWrapperExplained {
             ((Outlook.InspectorEvents_10_Event)Inspector).BeforeMove -= new Outlook.InspectorEvents_10_BeforeMoveEventHandler(BeforeMove);
             ((Outlook.InspectorEvents_10_Event)Inspector).BeforeSize -= new Outlook.InspectorEvents_10_BeforeSizeEventHandler(BeforeSize);
             ((Outlook.InspectorEvents_10_Event)Inspector).PageChange -= new Outlook.InspectorEvents_10_PageChangeEventHandler(PageChange);
+            //((Outlook.MailModule))
+
+            //Outlook.MailItem x = new Outlook.MailItem(); x.UserProperties.Application.Inspectors.Application.ActiveExplorer();
+            
             // clean up resources and do a GC.Collect();
             Inspector = null;
             GC.Collect();
             GC.WaitForPendingFinalizers();
             // raise the Close event.
             if (Closed != null) Closed(Id);
+        }
+        protected virtual void apples() {
+            MessageBox.Show("WHOOO");
         }
 
         /// <summary>
@@ -88,7 +98,7 @@ namespace InspectorWrapperExplained {
         /// Method gets called when another Page of the Inspector has been selected
         /// </summary>
         /// <param name="ActivePageName">The active page name by reference</param>
-        protected virtual void PageChange(ref string ActivePageName) { }
+        protected virtual void PageChange(ref string ActivePageName) {        }
 
         /// <summary>
         /// Method gets called before the Inspector is resized
@@ -126,7 +136,6 @@ namespace InspectorWrapperExplained {
         /// </summary>
         protected virtual void Activate() {
             //MessageBox.Show("Active at: " + Properties.Settings.Default.zoomLevel.ToString());
-             
             try { Inspector.WordEditor.Windows.Item(1).View.Zoom.Percentage = Properties.Settings.Default.zoomLevel;}
             catch (Exception er){ MessageBox.Show("Error. Please write save the following Error Message and Contact Steven Byrne in I.T. 320-291-6341 IF THE ERROR PERSISTS.\n" + er.ToString()); }
 
@@ -177,5 +186,6 @@ namespace InspectorWrapperExplained {
             // no wrapper found
             return null;
         }
+
     }
 }

@@ -31,3 +31,36 @@ G:\v1 Completions\ZoomIT Outlook2010\InspectorWrapperExplained\obj\Release\ZoomI
 G:\v1 Completions\ZoomIT Outlook2010\InspectorWrapperExplained\obj\Release\ZoomITOutLook.dll
 G:\v1 Completions\ZoomIT Outlook2010\InspectorWrapperExplained\obj\Release\ZoomITOutLook.pdb
 G:\v1 Completions\ZoomIT Outlook2010\InspectorWrapperExplained\obj\Release\ZoomIT.csprojResolveAssemblyReference.cache
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ThisAddIn.cs
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ThisAddIn.Designer.cs
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ThisAddIn.Designer.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ZoomITOutLook.dll.config
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ZoomITOutLook.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ZoomITOutLook.pdb
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ZoomITOutLook.dll.manifest
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\ZoomITOutLook.vsto
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.CSharp.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Common.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Outlook.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.v4.0.Framework.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\stdole.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\System.Data.DataSetExtensions.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\System.Data.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\System.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\System.Drawing.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\System.Windows.Forms.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.v4.0.Framework.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Common.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Outlook.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.xml
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\obj\Release\ZoomIT.csprojResolveAssemblyReference.cache
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\obj\Release\InspectorWrapperExplained.Properties.Resources.resources
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\obj\Release\ZoomIT.csproj.GenerateResource.Cache
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\obj\Release\ZoomITOutLook.dll
+P:\Git Projects\ZoomIT\Source\InspectorWrapperExplained\obj\Release\ZoomITOutLook.pdb
