@@ -1,6 +1,22 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Stable Release]
+
+## [2.6.0] - 2017-08-15
+### Added
+- Panel Preview zooming.
+- Virtual Keyboard impersonating (used for preview Zoom).
+- Mouse movement impersonating (used for preview Zoom).
+
+### Changed
+- Improve user friendly errors.
+- Adjusted start loop to delay allowing forms to load before zooming (reduces bugs on slow machines).
+
+
+### Notes
+- Totally hacked my way around the non-access API to zoom panels, instead I impersonate a keyboard/mouse zooming until it reaches the zoom level.
+
 
 ## [Stable Release]
 
