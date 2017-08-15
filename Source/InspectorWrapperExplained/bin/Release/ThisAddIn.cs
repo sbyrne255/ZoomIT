@@ -68,7 +68,6 @@ namespace InspectorWrapperExplained
                     if (selObject is Outlook.MailItem)
                     {
                         Outlook.MailItem mailItem = (selObject as Outlook.MailItem);
-                        MessageBox.Show("Got Mails");
                         if (lastItem != mailItem.EntryID)
                         {
                             lastItem = mailItem.EntryID;
@@ -82,7 +81,7 @@ namespace InspectorWrapperExplained
                             Point pt = new Point();
                             if (firstrun)
                             {
-                                Thread.Sleep(500);//Delay so the form can load and be active before the scroll attempt...
+                                Thread.Sleep(300);//Delay so the form can load and be active before the scroll attempt...
                                 firstrun = false;
                             }
                             new Thread(() =>

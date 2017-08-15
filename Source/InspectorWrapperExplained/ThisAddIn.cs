@@ -81,7 +81,7 @@ namespace InspectorWrapperExplained
                             Point pt = new Point();
                             if (firstrun)
                             {
-                                Thread.Sleep(500);//Delay so the form can load and be active before the scroll attempt...
+                                Thread.Sleep(300);//Delay so the form can load and be active before the scroll attempt...
                                 firstrun = false;
                             }
                             new Thread(() =>

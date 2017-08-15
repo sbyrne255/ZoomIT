@@ -51,12 +51,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4D2A5F4C58072BFF01CA56E527685D5B"
-        "OwnerKey" = "8:_6D53E6E850A24838A833A9D64C06372D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_53B9CAEEF612430E9DC9CF3E857BE208"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -71,6 +65,12 @@
         {
         "MsmKey" = "8:_5F6350C3B52E4F1BB331AB75EFE3CADB"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_642B3E45A736D097C2605ACF10CEF546"
+        "OwnerKey" = "8:_6D53E6E850A24838A833A9D64C06372D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -160,13 +160,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_879AFA73C4BC4ECDB5D15443D1A1C05E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5F6350C3B52E4F1BB331AB75EFE3CADB"
+        "OwnerKey" = "8:_F2019EF0CDCB41E986FCC871F2577395"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -178,13 +172,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F2019EF0CDCB41E986FCC871F2577395"
+        "OwnerKey" = "8:_A3DF55F46164439CAA2E536EE3096659"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A3DF55F46164439CAA2E536EE3096659"
+        "OwnerKey" = "8:_879AFA73C4BC4ECDB5D15443D1A1C05E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5F6350C3B52E4F1BB331AB75EFE3CADB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -238,7 +238,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4D2A5F4C58072BFF01CA56E527685D5B"
+        "OwnerKey" = "8:_642B3E45A736D097C2605ACF10CEF546"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -518,37 +518,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D2A5F4C58072BFF01CA56E527685D5B"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_4D2A5F4C58072BFF01CA56E527685D5B"
-                    {
-                    "Name" = "8:stdole.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:stdole.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_CB32183260CD4AEC94A9907AC10A1AF4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_53B9CAEEF612430E9DC9CF3E857BE208"
             {
             "SourcePath" = "8:..\\InspectorWrapperExplained\\bin\\Release\\ZoomITOutLook.pdb"
@@ -629,6 +598,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_642B3E45A736D097C2605ACF10CEF546"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_642B3E45A736D097C2605ACF10CEF546"
+                    {
+                    "Name" = "8:stdole.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:stdole.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_CB32183260CD4AEC94A9907AC10A1AF4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_79098201DC0D49CDAB33060706479B52"
@@ -952,15 +952,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ZoomIT"
-        "ProductCode" = "8:{D2E361C2-025D-46EB-8A9B-F275A2DB9596}"
-        "PackageCode" = "8:{56C5FE9B-55D9-4FFE-8A9D-1901BB8F977E}"
+        "ProductCode" = "8:{393B8157-09F4-4C3F-9340-D9E1BA9D3DC7}"
+        "PackageCode" = "8:{600F3FCA-69DE-4CF4-89EB-C30037428D94}"
         "UpgradeCode" = "8:{48DE0AD8-C711-49DE-AAA5-3C58FE6C2B23}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.5.0"
+        "ProductVersion" = "8:2.6.0"
         "Manufacturer" = "8:Hitman IT"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
