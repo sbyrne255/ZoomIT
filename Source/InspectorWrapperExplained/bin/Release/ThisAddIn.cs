@@ -12,7 +12,6 @@ namespace InspectorWrapperExplained
 {
     public partial class ThisAddIn
     {
-        private bool firstrun = true;
         private string lastItem = "";
         private Outlook.Explorer currentExplorer = null;
 
@@ -22,7 +21,8 @@ namespace InspectorWrapperExplained
         public const int KEYEVENTF_EXTENDEDKEY = 0x0001; //Key down flag
         public const int KEYEVENTF_KEYUP = 0x0002; //Key up flag
         public const int VK_CONTROL = 0x11; //Control key code
-        public const int VK_TAB = 0x09; //Control key code
+        public const int VK_TAB = 0x09; //tab key code
+        public const int VK_SHIFT = 0x10; //shift key code
         private Outlook.Inspectors _inspectors;
         protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
         {
@@ -79,27 +79,31 @@ namespace InspectorWrapperExplained
 
                             PointConverter pc = new PointConverter();
                             Point pt = new Point();
-                            if (firstrun)
-                            {
-                                Thread.Sleep(300);//Delay so the form can load and be active before the scroll attempt...
-                                firstrun = false;
-                            }
                             new Thread(() =>
                             {
+                                Thread.Sleep(300);//Delay so the form can load/set selected item and be active before the scroll attempt...
                                 Thread.CurrentThread.IsBackground = true;
                                 pt = (Point)pc.ConvertFromString(w.ToString() + "," + h.ToString());
                                 int posX = Cursor.Position.X;
                                 int posY = Cursor.Position.Y;
                                 Cursor.Position = pt;
-                                keybd_event(VK_TAB, 0x9d, 0, 0); // Ctrl Press
+                                keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
                                 keybd_event(VK_CONTROL, 0x9d, 0, 0); // Ctrl Press
                                 //Set proper scroll...
                                 InspectorWrapperExplained.NativeMethods.MouseInput.ScrollWheel((Properties.Settings.Default.zoomLevel - 100) / 10);//num * 10% IE, 5 = +150% zoom
-                                keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Ctrl Release
+                                keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
                                 keybd_event(VK_CONTROL, 0x9d, KEYEVENTF_KEYUP, 0); // Ctrl Release
 
                                 pt = (Point)pc.ConvertFromString(posX.ToString() + "," + posY.ToString());
                                 Cursor.Position = pt;
+
+                                //Return tab to previous location (work around, doesn't work for tabs but does center messages so that uses can scroll through their emails with the arrow keys.).
+                                keybd_event(VK_SHIFT, 0x9d, 0, 0); // Shift Press
+                                keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
+
+                                keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
+                                keybd_event(VK_SHIFT, 0x9d, KEYEVENTF_KEYUP, 0); // Shift Release
+
                             }).Start();
                         }
                     }

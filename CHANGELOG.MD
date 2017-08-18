@@ -1,7 +1,25 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
-
 ## [Stable Release]
+
+## [2.6.1] - 2017-08-15
+### Added
+- Arrow key scrolling support.
+
+### Fixed
+- Fixed issue with tab not reseting causing users to not be able to scroll/loose their tab position.
+- Fixed issue with messages loading and zooming before index was set (caused problem with fast comptuers zooming and then unzooming).
+- Fix attempt at windows 10 install problems.
+
+## Bugs
+- On zoom if a custom tab is select on the ribbon it will loose focus and return to mail items (low priority).
+- Windows 10 can't install (problem with test certificate for trusted program).
+
+### Notes
+- Totally hacked my way around the non-access API to zoom panels, instead I impersonate a keyboard/mouse zooming until it reaches the zoom level.
+
+
+## [Beta Release]
 
 ## [2.6.0] - 2017-08-15
 ### Added
