@@ -4,7 +4,12 @@
     <tabs>
       <tab idMso="TabAddIns" label="Zoom It Settings">
         <group id="MyGroup">
-          <button id="btnLogo" getImage="imageSuper_GetImage" size="large" onAction="Button_Click" label="Save Zoom" />
+          <button id="btnLogo" getImage="imageSuper_GetImage" size="large" onAction="Button_Click" label="Save Zoom" screentip="Save Zoom" supertip="Save the Zoom Percentage (default 100)" />
+          <toggleButton getImage="imageSuper_GetImage" id="toggleButton1" label="Zoom Preview Panes" size="large" getPressed="check_changed" onAction="buttonAction" screentip="Toggle the Pane Preview Zoom Setting" supertip="To Zoom, or not to Zoom- that is the question: 
+Whether 'tis nobler in the eyes to suffer
+The slings and arrows of outrageous fortune 
+Or to take arms against a sea of unzoom panels, 
+And by opposing end them." />
           <editBox id="EditBox" label="Zoom %" onChange="RecupDonnee" maxLength="4"/>
         </group>
       </tab>

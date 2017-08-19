@@ -41,6 +41,8 @@ namespace InspectorWrapperExplained
         }
 
         private string x = "";
+        private bool zoomPanes = Properties.Settings.Default.zoomPanes;
+
         public Bitmap imageSuper_GetImage(Office.IRibbonControl control)
         {
             try
@@ -50,6 +52,15 @@ namespace InspectorWrapperExplained
             catch (Exception er) { MessageBox.Show(er.ToString()); return null; }
         }
         #region IRibbonExtensibility Members
+        public void buttonAction(Office.IRibbonControl control, bool isPressed)
+        {
+            Properties.Settings.Default.zoomPanes = isPressed;
+            zoomPanes = isPressed;
+        }
+        public bool check_changed(Office.IRibbonControl control)
+        {
+            return zoomPanes;
+        }
         public void Button_Click(Office.IRibbonControl control)
         {
             try

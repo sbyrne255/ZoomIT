@@ -34,5 +34,17 @@ namespace InspectorWrapperExplained.Properties {
                 this["zoomLevel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool zoomPanes {
+            get {
+                return ((bool)(this["zoomPanes"]));
+            }
+            set {
+                this["zoomPanes"] = value;
+            }
+        }
     }
 }

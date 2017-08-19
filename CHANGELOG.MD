@@ -1,5 +1,16 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [Stable Release]
+
+## [2.7.0] - 2017-08-19
+### Added
+- Ribbon Button to toggle if preview panes are zoomed or not.
+
+## Bugs
+- When scrolling fast (holding down the arrow key to scroll) panes don't get zoomed or they get zoomed to much.
+
+
 ## [Stable Release]
 
 ## [2.6.1] - 2017-08-15

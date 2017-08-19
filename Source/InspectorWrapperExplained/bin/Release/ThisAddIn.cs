@@ -61,50 +61,52 @@ namespace InspectorWrapperExplained
         {
             try
             {
-                if (this.Application.ActiveExplorer().Selection.Count > 0)
+                if (Properties.Settings.Default.zoomPanes)
                 {
-                    Object selObject = this.Application.ActiveExplorer().Selection[1];
-
-                    if (selObject is Outlook.MailItem)
+                    if (this.Application.ActiveExplorer().Selection.Count > 0)
                     {
-                        Outlook.MailItem mailItem = (selObject as Outlook.MailItem);
-                        if (lastItem != mailItem.EntryID)
+                        Object selObject = this.Application.ActiveExplorer().Selection[1];
+
+                        if (selObject is Outlook.MailItem)
                         {
-                            lastItem = mailItem.EntryID;
-                            //mailItem.Body += "My balls are black";
-                            currentExplorer = this.Application.ActiveExplorer();
-                            int h = currentExplorer.Height;
-                            int w = currentExplorer.Width;
-
-
-                            PointConverter pc = new PointConverter();
-                            Point pt = new Point();
-                            new Thread(() =>
+                            Outlook.MailItem mailItem = (selObject as Outlook.MailItem);
+                            if (lastItem != mailItem.EntryID)
                             {
-                                Thread.Sleep(300);//Delay so the form can load/set selected item and be active before the scroll attempt...
-                                Thread.CurrentThread.IsBackground = true;
-                                pt = (Point)pc.ConvertFromString(w.ToString() + "," + h.ToString());
-                                int posX = Cursor.Position.X;
-                                int posY = Cursor.Position.Y;
-                                Cursor.Position = pt;
-                                keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
-                                keybd_event(VK_CONTROL, 0x9d, 0, 0); // Ctrl Press
-                                //Set proper scroll...
-                                InspectorWrapperExplained.NativeMethods.MouseInput.ScrollWheel((Properties.Settings.Default.zoomLevel - 100) / 10);//num * 10% IE, 5 = +150% zoom
-                                keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
-                                keybd_event(VK_CONTROL, 0x9d, KEYEVENTF_KEYUP, 0); // Ctrl Release
+                                lastItem = mailItem.EntryID;
+                                currentExplorer = this.Application.ActiveExplorer();
+                                int h = currentExplorer.Height;
+                                int w = currentExplorer.Width;
 
-                                pt = (Point)pc.ConvertFromString(posX.ToString() + "," + posY.ToString());
-                                Cursor.Position = pt;
 
-                                //Return tab to previous location (work around, doesn't work for tabs but does center messages so that uses can scroll through their emails with the arrow keys.).
-                                keybd_event(VK_SHIFT, 0x9d, 0, 0); // Shift Press
-                                keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
+                                PointConverter pc = new PointConverter();
+                                Point pt = new Point();
+                                new Thread(() =>
+                                {
+                                    Thread.Sleep(300);//Delay so the form can load/set selected item and be active before the scroll attempt...
+                                    Thread.CurrentThread.IsBackground = false;
+                                    pt = (Point)pc.ConvertFromString(w.ToString() + "," + h.ToString());
+                                    int posX = Cursor.Position.X;
+                                    int posY = Cursor.Position.Y;
+                                    Cursor.Position = pt;
+                                    keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
+                                    keybd_event(VK_CONTROL, 0x9d, 0, 0); // Ctrl Press
+                                    //Set proper scroll...
+                                    InspectorWrapperExplained.NativeMethods.MouseInput.ScrollWheel((Properties.Settings.Default.zoomLevel - 100) / 10);//num * 10% IE, 5 = +150% zoom
+                                    keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
+                                    keybd_event(VK_CONTROL, 0x9d, KEYEVENTF_KEYUP, 0); // Ctrl Release
 
-                                keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
-                                keybd_event(VK_SHIFT, 0x9d, KEYEVENTF_KEYUP, 0); // Shift Release
+                                    pt = (Point)pc.ConvertFromString(posX.ToString() + "," + posY.ToString());
+                                    Cursor.Position = pt;
 
-                            }).Start();
+                                    //Return tab to previous location (work around, doesn't work for tabs but does center messages so that uses can scroll through their emails with the arrow keys.).
+                                    keybd_event(VK_SHIFT, 0x9d, 0, 0); // Shift Press
+                                    keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
+
+                                    keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
+                                    keybd_event(VK_SHIFT, 0x9d, KEYEVENTF_KEYUP, 0); // Shift Release
+
+                                }).Start();
+                            }
                         }
                     }
                 }
