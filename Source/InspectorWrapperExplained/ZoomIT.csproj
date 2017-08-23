@@ -234,6 +234,7 @@
     <Compile Include="AppointmentItemWrapper.cs" />
     <Compile Include="ContactItemWrapper.cs" />
     <Compile Include="JournalItemWrapper.cs" />
+    <Compile Include="Keyboard.cs" />
     <Compile Include="MailItemWrapper.cs" />
     <Compile Include="InspectorWrapper.cs" />
     <Compile Include="MouseInput.cs" />

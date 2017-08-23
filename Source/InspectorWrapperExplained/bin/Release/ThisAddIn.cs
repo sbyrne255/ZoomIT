@@ -13,8 +13,8 @@ namespace InspectorWrapperExplained
     public partial class ThisAddIn
     {
         private string lastItem = "";
+        private bool isDone = true;
         private Outlook.Explorer currentExplorer = null;
-
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
@@ -44,7 +44,10 @@ namespace InspectorWrapperExplained
                 _wrappedInspectors = new Dictionary<Guid, InspectorWrapper>();
                 _inspectors = Globals.ThisAddIn.Application.Inspectors;
                 _inspectors.NewInspector += new Outlook.InspectorsEvents_NewInspectorEventHandler(WrapInspector);
-                //MessageBox.Show("HERE 3");
+
+                currentExplorer = this.Application.ActiveExplorer();
+                currentExplorer.SelectionChange += new Outlook.ExplorerEvents_10_SelectionChangeEventHandler(CurrentExplorer_Event);
+                //currentExplorer.ViewSwitch += new Outlook.ExplorerEvents_10_ViewSwitchEventHandler(CurrentExplorer_Event);
 
                 // Handle also already existing Inspectors
                 // (e.g. Double clicking a .msg file)
@@ -52,8 +55,6 @@ namespace InspectorWrapperExplained
                 {
                     WrapInspector(inspector);
                 }
-                currentExplorer = this.Application.ActiveExplorer();
-                currentExplorer.SelectionChange += new Outlook.ExplorerEvents_10_SelectionChangeEventHandler(CurrentExplorer_Event);
             }
             catch (Exception er) { MessageBox.Show(er.ToString()); }
         }
@@ -63,7 +64,7 @@ namespace InspectorWrapperExplained
             {
                 if (Properties.Settings.Default.zoomPanes)
                 {
-                    if (this.Application.ActiveExplorer().Selection.Count > 0)
+                    if (this.Application.ActiveExplorer().Selection.Count > 0 && this.Application.ActiveExplorer().Selection.Count < 2)
                     {
                         Object selObject = this.Application.ActiveExplorer().Selection[1];
 
@@ -80,32 +81,43 @@ namespace InspectorWrapperExplained
 
                                 PointConverter pc = new PointConverter();
                                 Point pt = new Point();
-                                new Thread(() =>
+                                if (isDone)
                                 {
-                                    Thread.Sleep(300);//Delay so the form can load/set selected item and be active before the scroll attempt...
-                                    Thread.CurrentThread.IsBackground = false;
-                                    pt = (Point)pc.ConvertFromString(w.ToString() + "," + h.ToString());
-                                    int posX = Cursor.Position.X;
-                                    int posY = Cursor.Position.Y;
-                                    Cursor.Position = pt;
-                                    keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
-                                    keybd_event(VK_CONTROL, 0x9d, 0, 0); // Ctrl Press
-                                    //Set proper scroll...
-                                    InspectorWrapperExplained.NativeMethods.MouseInput.ScrollWheel((Properties.Settings.Default.zoomLevel - 100) / 10);//num * 10% IE, 5 = +150% zoom
-                                    keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
-                                    keybd_event(VK_CONTROL, 0x9d, KEYEVENTF_KEYUP, 0); // Ctrl Release
+                                    isDone = false;
+                                    int sleep = 0;
+                                    if (Keyboard.IsKeyDown(Keys.Up) || Keyboard.IsKeyDown(Keys.Down))
+                                    {
+                                        sleep = 800;
+                                    }
+                                    new Thread(() =>{
+                                        //https://stackoverflow.com/questions/32405387/exiting-c-sharp-function-execution-if-one-of-the-variable-value-during-execution Look at some threading options
+                                        //Problem when scrolling fast, emails don't zoom.
+                                        Thread.Sleep(sleep);//Delay so the form can load/set selected item and be active before the scroll attempt...
+                                        //Thread.CurrentThread.IsBackground = true;
+                                        pt = (Point)pc.ConvertFromString(w.ToString() + "," + h.ToString());
+                                        int posX = Cursor.Position.X;
+                                        int posY = Cursor.Position.Y;
+                                        Cursor.Position = pt;
+                                        keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
+                                        keybd_event(VK_CONTROL, 0x9d, 0, 0); // Ctrl Press
+                                        //Set proper scroll...
+                                        InspectorWrapperExplained.NativeMethods.MouseInput.ScrollWheel((Properties.Settings.Default.zoomLevel - 100) / 10);//num * 10% IE, 5 = +150% zoom
+                                        keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
+                                        keybd_event(VK_CONTROL, 0x9d, KEYEVENTF_KEYUP, 0); // Ctrl Release
 
-                                    pt = (Point)pc.ConvertFromString(posX.ToString() + "," + posY.ToString());
-                                    Cursor.Position = pt;
+                                        pt = (Point)pc.ConvertFromString(posX.ToString() + "," + posY.ToString());
+                                        Cursor.Position = pt;
 
-                                    //Return tab to previous location (work around, doesn't work for tabs but does center messages so that uses can scroll through their emails with the arrow keys.).
-                                    keybd_event(VK_SHIFT, 0x9d, 0, 0); // Shift Press
-                                    keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
+                                        //Return tab to previous location (work around, doesn't work for tabs but does center messages so that uses can scroll through their emails with the arrow keys.).
+                                        keybd_event(VK_SHIFT, 0x9d, 0, 0); // Shift Press
+                                        keybd_event(VK_TAB, 0x9d, 0, 0); // tab Press
 
-                                    keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
-                                    keybd_event(VK_SHIFT, 0x9d, KEYEVENTF_KEYUP, 0); // Shift Release
+                                        keybd_event(VK_TAB, 0x9d, KEYEVENTF_KEYUP, 0); // Tab Release
+                                        keybd_event(VK_SHIFT, 0x9d, KEYEVENTF_KEYUP, 0); // Shift Release
+                                        isDone = true;
 
-                                }).Start();
+                                    }).Start();
+                                }
                             }
                         }
                     }

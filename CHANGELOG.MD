@@ -3,12 +3,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Stable Release]
 
+## [2.7.1] - 2017-08-23
+### Fixed
+- Fix attempt for Arrow Key scrolling issues (introduced keyboard hooks and delays on arrow key usage).
+
+
+
+## [Stable Release]
+
 ## [2.7.0] - 2017-08-19
 ### Added
 - Ribbon Button to toggle if preview panes are zoomed or not.
 
 ## Bugs
 - When scrolling fast (holding down the arrow key to scroll) panes don't get zoomed or they get zoomed to much.
+
 
 
 ## [Stable Release]
@@ -30,6 +39,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Totally hacked my way around the non-access API to zoom panels, instead I impersonate a keyboard/mouse zooming until it reaches the zoom level.
 
 
+
 ## [Beta Release]
 
 ## [2.6.0] - 2017-08-15
@@ -45,6 +55,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Notes
 - Totally hacked my way around the non-access API to zoom panels, instead I impersonate a keyboard/mouse zooming until it reaches the zoom level.
+
 
 
 ## [Stable Release]
